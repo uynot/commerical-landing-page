@@ -180,9 +180,9 @@ header {
 	position: relative;
 	overflow: hidden;
 	margin: 30px;
-	height: 120px;
+	height: 150px;
 	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .service-link {
@@ -225,7 +225,7 @@ header {
 	right: -100%;
 	bottom: 0;
 	width: 100%;
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.7);
 	transition: right 0.5s ease;
 	display: flex;
 	flex-direction: column;
@@ -238,6 +238,12 @@ header {
 .service-overlay p,
 .service-overlay h2 {
 	margin: 10px 0px 10px 0px;
+	color: var(--text-color);
+}
+
+.service-overlay:active p,
+.service-overlay:active h2 {
+	color: #ffa500;
 }
 
 .services article:hover .service-overlay {
